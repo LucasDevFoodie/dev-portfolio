@@ -8,6 +8,13 @@
     z-index: 9999;
 }
 
+/* Dark mode swap */
+body:not(.light-mode) {
+    .header__icon > svg {
+        fill: var(--color-secondary)
+    }
+}
+
 .header__menu {
     display: none;
 }
@@ -51,9 +58,8 @@
     
     .header__icon {
         display: block;
-        color: var(--color-slate-600);
-        width: var(--size-base);
-        height: var(--size-base);
+        width: var(--size-lg);
+        height: var(--size-lg);
     }
     
     .header__resume {
@@ -71,8 +77,8 @@
     }
     
     .header__icon {
-        width: var(--size-xl);
-        height: var(--size-xl);
+        width: var(--size-2xl);
+        height: var(--size-2xl);
     }
     
     .header__resume {

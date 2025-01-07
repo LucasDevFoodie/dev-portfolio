@@ -1,9 +1,15 @@
+/* Dark mode is set by default.
+    SVG colors are coupled with the class vaue
+*/
+
 const darkMode = () => {
     const keyTheme = 'theme';
     const mode = 'light-mode';
-    const themeToggleBtns = [document.querySelector('#theme-toggle-web'),
-    document.querySelector('#theme-toggle-mobile')];
-
+    const themeToggleBtns = [
+        document.querySelector('#theme-toggle-web'),
+        document.querySelector('#theme-toggle-mobile')
+    ];
+    
     //State
     const theme = localStorage.getItem(keyTheme);
 
@@ -25,7 +31,10 @@ const darkMode = () => {
 
     //Events
     themeToggleBtns.forEach((btn) => 
-        btn.addEventListener('click', () => handleThemeToggle())
+        btn.addEventListener('click', () => {
+            handleThemeToggle();
+
+        })
     )
 }
 
