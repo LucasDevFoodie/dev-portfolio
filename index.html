@@ -6,7 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/icon.svg" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Dev Portfolio</title>
+  <meta name="description" content="Developer Portfolio" />
+  <meta name="keywords" content="Developer Portfolio Fullstack Web html javascript css" />
+  <title>Dev Portfolio</title>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
         </li>
         <li class="header__line"></li>
         <li>
-          <button id="theme-toggle-web" class="header__icon">
+          <button aria-label="theme toggle button" id="theme-toggle-web" class="header__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -36,7 +38,7 @@
           <a class="header__resume btn" href="#resume">Resume</a>
         </li>
       </ul>
-      <button class="header__bars">
+      <button aria-label="navigation button" class="header__bars">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd"
             d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
@@ -62,7 +64,7 @@
         </li>
         <li class="mobile-nav__link-line"></li>
         <li>
-          <button id="theme-toggle-mobile" class="mobile-nav__icon">
+          <button aria-label="mobile theme toggle button" id="theme-toggle-mobile" class="mobile-nav__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -125,7 +127,7 @@
       <h3 class="featured__subtitle">Featured projects</h3>
       <div class="featured__wrapper">
         <h2 class="featured__title">Ppro Developer Hub</h2>
-        <a class="featured__link" href="https://developerhub.ppro.com/">
+        <a aria-label="link fesatured project" class="featured__link" href="https://developerhub.ppro.com/">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
             stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round"
@@ -150,10 +152,11 @@
         <div>
           <h3 class="feature__label">Project Type</h3>
           <p class="featured__info">Front-End</p>
+          <p class="featured__info">JAMStack</p>
         </div>
         <div>
           <h3 class="feature__label">Timeline</h3>
-          <p class="featured__info">Mid 2022</p>
+          <p class="featured__info">Mid 2022 to Feb 2023</p>
         </div>
       </div>
       <div class="featured__img-container">

@@ -1,11 +1,12 @@
 :root {
     --color-dark: #030712;
-    --color-light: #f1f5f9;
+    --color-light: #fbe9d0;
     --color-slate-400: #94a3b8;
     --color-slate-600: #475569;
     --color-slate-800: #1e293b;
-    --color-primary: #a3e635; /* rgb(163, 230, 53) */ 
+    --color-primary: #244855; /* rgb(163, 230, 53) */ 
     --color-secondary: #cda235 /* 	rgb(251, 191, 36) */;
+    --color-primary-light: #f8eee0;
     --color-primary-shadow: rgb(163, 230, 53, 0.4);
     --color-primary-shadow-light: rgb(163, 230, 53, 0.1);
 

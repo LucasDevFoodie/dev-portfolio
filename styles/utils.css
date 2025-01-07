@@ -30,7 +30,7 @@
     text-decoration: none;
     letter-spacing: -0.05em;
     background-color: var(--color-primary);
-    color: var(--color-light);
+    color: var(--color-primary-light);
     padding: 0.5em 1em;
     border-radius: 6px;
     box-shadow: 0 10px 20px var(--color-primary-shadow), 

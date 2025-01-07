@@ -27,7 +27,7 @@
 
 .about__subtitle {
     font-size: var(--size-sm);
-    color: var(--color-slate-400);
+    /* color: var(--color-slate-400); */
 }
 
 .about__ul-container {
