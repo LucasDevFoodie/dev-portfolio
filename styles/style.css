@@ -93,5 +93,5 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: var(--color-primary);
     outline: 1px solid var(--color-primary);
-    border-radius: 25%;
+    border-radius: 1rem;
   }
