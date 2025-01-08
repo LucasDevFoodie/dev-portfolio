@@ -10,10 +10,12 @@ import '../styles/components/footer.css'
 import '../styles/components/mobile.css'
 import '../styles/utils.css' /* highest priority required */
 
-import mobileNav from './utils/mobile-navs';
-import darkMode from './utils/dark-mode';
+import mobileNav from './utils/mobile-navs'
+import darkMode from './utils/dark-mode'
 import lazyLoading from './utils/lazy-loading'
+import dateTime from './utils/date-time'
 
 mobileNav();
 darkMode();
 lazyLoading();
+dateTime();
