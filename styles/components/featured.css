@@ -54,7 +54,6 @@
 .featured__info {
     font-size: var(--size-sm);
     color: var(--color-slate-600);
-    text-transform: capitalize;
 }
 
 .featured__img-container {

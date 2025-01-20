@@ -4,7 +4,7 @@
 
 const darkMode = () => {
     const keyTheme = 'theme';
-    const mode = 'light-mode';
+    const lightMode = 'light-mode';
     const themeToggleBtns = [
         document.querySelector('#theme-toggle-web'),
         document.querySelector('#theme-toggle-mobile')
@@ -18,10 +18,10 @@ const darkMode = () => {
 
     //Handler
     const handleThemeToggle = () => {
-        var isLight = document.body.classList.toggle(mode);
+        var isLight = document.body.classList.toggle(lightMode);
         
         if (isLight) {
-            localStorage.setItem(keyTheme, mode);
+            localStorage.setItem(keyTheme, lightMode);
         }
         else {
             localStorage.removeItem(keyTheme);
@@ -33,7 +33,6 @@ const darkMode = () => {
     themeToggleBtns.forEach((btn) => 
         btn.addEventListener('click', () => {
             handleThemeToggle();
-
         })
     )
 }

@@ -6,20 +6,20 @@ const mobileNav = () => {
     let isMobileNavOpen = false;
     
     headerBtn.addEventListener('click', () => {
+        isMobileNavOpen = !isMobileNavOpen;
         if(isMobileNavOpen) {
-            closeNav();
-        } 
-        else {
-
             mobileNav.style.display = "flex";    
             document.body.style.overflowY = 'hidden';
+        } 
+        else {
+            closeNav();
         }
-        isMobileNavOpen = !isMobileNavOpen;
     })
 
     mobileLinks.forEach((link) => {
         link.addEventListener('click', () => 
         {
+            isMobileNavOpen = false;
             closeNav();
         })
     })

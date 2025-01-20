@@ -6,7 +6,7 @@ const lazyLoading = () => {
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
                 let img = entry.target;
-                img.src = img.dataset.src;
+                img.src = img.dataset.src; //We swap src value with data-src value 
                 img.classList.remove('loading');
                 img.classList.add('loaded');
                 observer.unobserve(entry.target)

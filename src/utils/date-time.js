@@ -1,5 +1,5 @@
 const dateTime = () => {
-    document.querySelector('.footer__date').innerHTML = new Date().getFullYear();
+    document.querySelector('#footer-date').innerHTML = new Date().getFullYear();
 }
 
 export default dateTime;

@@ -27,36 +27,56 @@
 
 .about__subtitle {
     font-size: var(--size-sm);
-    /* color: var(--color-slate-400); */
+    color: var(--color-secondary);
 }
 
-.about__ul-container {
+.about__tech-container {
     display: flex;
-    flex-direction: column;
-}
-
-.about__ul {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1em;
-    list-style-type: '\1F5B1 \FE0F';
-    padding-left: 1em;
-    flex: 1;
 }
 
-.about__li {
+.about__tech-column {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    justify-content: space-evenly;
+}
+
+.about__tech-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    background-image: linear-gradient(var(--color-dark), var(--color-dark)), 
+    radial-gradient(circle at top left, var(--color-dark), var(--color-secondary));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    min-width: 90px;
+}
+
+.about__tech-box-img {
+    width: 2em;
+    height: 2em;
+}
+
+.about__tech-box-text {
+    color: var(--color-light);
     font-size: var(--size-sm);
-    color: var(--color-slate-600);
-    
 }
 
-.about__li::before {
+
+/* Hack to eliminate li icons
+/* .about__li::before {
     content: '';
     margin-left: 0.5em;
-}
+}  */
 
 .about__img {
     margin: 0 auto;
+    width: 15em;
+    border-radius: 10%;
 }
 
 /* xs */
@@ -79,15 +99,7 @@
     
     .about__subtitle {
         font-size: var(--size-base);
-    }    
-
-    .about__ul-container {
-        flex-direction: row;
-    }
-   
-    .about__li {
-        font-size: var(--size-base);
-    }
+    }        
 
     .about__img {
         width: 20rem;
@@ -96,8 +108,16 @@
 
 /* sm */
 @media (min-width: 640px) {
-    .about__img {
-        width: 27rem;
+    .about__subtitle {
+        font-size: var(--size-lg);
+    }
+
+    .about__tech-box {
+        flex-direction: column;
+    }
+
+    .about__tech-box-text {
+        font-size: var(--size-xl);
     }
 
     .about__img-wrapper {
@@ -133,10 +153,6 @@
     .about__subtitle {
         font-size: var(--size-lg);
     }    
-   
-    .about__li {
-        font-size: var(--size-lg);
-    }
 }
 
 /* xl */
@@ -157,13 +173,11 @@
         font-size: var(--size-xl);
     }    
    
-    .about__li {
-        font-size: var(--size-xl);
+    .about__img {
+        width: 25rem;
     }
 
-    .about__img {
-        width: 30rem;
-    }
+
 }
 
 /* 2xl */
