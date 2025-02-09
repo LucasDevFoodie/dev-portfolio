@@ -4,7 +4,7 @@ footer {
     font-size: var(--size-xs);
 }
 
-.footer__title {
+.footer__label {
     font-weight: 400;
     color: var(--color-slate-600);
     text-align: center;
