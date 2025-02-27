@@ -98,18 +98,6 @@
         grid-area: image3;
     }
 
-    .work__content1 {
-        grid-area: content1;
-    }
-
-    .work__content2 {
-        grid-area: content2;
-    }
-
-    .work__content3 {
-        grid-area: content3;
-    }
-
     .work__project {
         padding: 0 1rem;
     }
@@ -197,10 +185,6 @@
     .work__description {
         font-size: var(--size-xl);
         margin: 2rem auto;
-    }
-
-    .work__description {
-        font-size: var(--size-lg);
     }
 
     .work__project-description {
