@@ -29,6 +29,10 @@ dialog[open] {
     align-self: flex-end;
 }
 
+.dialog__btn-close:focus {
+    outline-color: white;
+}
+
 .dialog__btn-show {
     margin-top: 1rem;
 }
