@@ -13,6 +13,7 @@
 
 <body>
   <div id="app"></div>
+
   <header class="header container">
     <nav>
       <ul class="header__menu">
@@ -80,7 +81,20 @@
     </nav>
   </div>
 
-  <!-- End of Mobile Navigation-->
+  <!-- End of Mobile Navigation -->
+
+  <!-- Dialog Section -->
+
+  <div class="dialog__wrapper">
+    <dialog class='dialog'>
+      <button class='dialog__btn-close' autofocus>X</button>
+      <h4 class="dialog__title">This portfolio has been written with React and Typescript too!</h4>
+      <a class="dialog__btn-show btn" href="https://dev-portfolio-react-ts.vercel.app/" target="_blank">Let's go</a>
+    </dialog>
+  </div>
+
+  <!-- End Dialog Section -->
+
   <main>
     <section class="hero container">
       <img class="hero__img" src="/hero_image.jpeg" alt="gentle profile picture" />
@@ -111,25 +125,30 @@
               <p class="about__tech-box-text">CSS</p>
             </div>
             <div class="about__tech-box">
-              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32" data-src="skills_js-ts.png" />
+              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32"
+                data-src="skills_js-ts.png" />
               <p class="about__tech-box-text">JS / TS</p>
             </div>
             <div class="about__tech-box">
-              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32" data-src="skills_react.png" />
+              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32"
+                data-src="skills_react.png" />
               <p class="about__tech-box-text">React</p>
             </div>
           </div>
           <div class="about__tech-column">
             <div class="about__tech-box">
-              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32" data-src="skills_mongo.png" />
+              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32"
+                data-src="skills_mongo.png" />
               <p class="about__tech-box-text">Mongo</p>
             </div>
             <div class="about__tech-box">
-              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32" data-src="skills_postgre.png" />
+              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32"
+                data-src="skills_postgre.png" />
               <p class="about__tech-box-text">Postgre</p>
             </div>
             <div class="about__tech-box">
-              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32" data-src="skills_csharp.png" />
+              <img class="about__tech-box-img lazy loading" src="https://fakeimg.pl/32x32"
+                data-src="skills_csharp.png" />
               <p class="about__tech-box-text">C#</p>
             </div>
             <div class="about__tech-box">
@@ -275,24 +294,27 @@
       <a class="contact_btn btn" target="_blank" href="mailto:lucas.macias.atala@gmail.com">Reach Out</a>
     </section>
   </main>
-  <footer class="footer container section">    
+  <footer class="footer container section">
     <div class="footer__wrapper">
-        <h3 class="footer__label">Thank you for visiting me!</h3>
-        <h3 class="footer__label"> Reach me on Github & Linkedin</h3>
-        <div class="footer__logos">
-          <a class="footer__img lazy loading" href="https://github.com/LucasDevFoodie" target="_blank">
-            <img src="github-logo.png" alt="Github logo"/>
-          </a>
-          <a class="footer__img" href="https://www.linkedin.com/in/lucas-atala-99547a307" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" id="linkedin" data-supported-dps="34x34" fill="currentColor" width="34" height="34" focusable="false" class="lazy loading">
-              <g>
-                <path class="background-mercado" d="M34 2.5v29a2.5 2.5 0 01-2.5 2.5h-29A2.5 2.5 0 010 31.5v-29A2.5 2.5 0 012.5 0h29A2.5 2.5 0 0134 2.5zM10 13H5v16h5zm.45-5.5A2.88 2.88 0 007.5 4.6a2.9 2.9 0 100 5.8 2.88 2.88 0 002.95-2.9zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.71 5.71 0 00-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 013.23-3.59c1.59 0 2.77 1 2.77 3.52V29h5z"></path>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <h4><strong id="footer-date"></strong></h4>
+      <h3 class="footer__label">Thank you for visiting me!</h3>
+      <h3 class="footer__label"> Reach me on Github & Linkedin</h3>
+      <div class="footer__logos">
+        <a class="footer__img lazy loading" href="https://github.com/LucasDevFoodie" target="_blank">
+          <img src="github-logo.png" alt="Github logo" />
+        </a>
+        <a class="footer__img" href="https://www.linkedin.com/in/lucas-atala-99547a307" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" id="linkedin" data-supported-dps="34x34"
+            fill="currentColor" width="34" height="34" focusable="false" class="lazy loading">
+            <g>
+              <path class="background-mercado"
+                d="M34 2.5v29a2.5 2.5 0 01-2.5 2.5h-29A2.5 2.5 0 010 31.5v-29A2.5 2.5 0 012.5 0h29A2.5 2.5 0 0134 2.5zM10 13H5v16h5zm.45-5.5A2.88 2.88 0 007.5 4.6a2.9 2.9 0 100 5.8 2.88 2.88 0 002.95-2.9zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.71 5.71 0 00-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 013.23-3.59c1.59 0 2.77 1 2.77 3.52V29h5z">
+              </path>
+            </g>
+          </svg>
+        </a>
       </div>
+      <h4><strong id="footer-date"></strong></h4>
+    </div>
   </footer>
   <script type="module" src="/src/main.js"></script>
 </body>

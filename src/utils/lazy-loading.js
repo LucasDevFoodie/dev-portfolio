@@ -1,4 +1,4 @@
-const lazyLoading = () => {
+export const lazyLoading = () => {
 
     const lazyImgs = document.querySelectorAll('.lazy');
     
@@ -6,7 +6,7 @@ const lazyLoading = () => {
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
                 let img = entry.target;
-                img.src = img.dataset.src; //We swap src value with data-src value 
+                img.src = img.dataset.src; //Swap src value with data-src value 
                 img.classList.remove('loading');
                 img.classList.add('loaded');
                 observer.unobserve(entry.target)
@@ -23,5 +23,3 @@ const lazyLoading = () => {
         observer.observe(img);
     })
 }
-
-export default lazyLoading;

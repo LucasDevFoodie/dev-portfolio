@@ -8,14 +8,17 @@ import '../styles/components/work.css'
 import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/components/mobile.css'
+import '../styles/components/modal.css'
 import '../styles/utils.css' /* highest priority required */
 
-import mobileNav from './utils/mobile-navs'
-import darkMode from './utils/dark-mode'
-import lazyLoading from './utils/lazy-loading'
-import dateTime from './utils/date-time'
+import { mobileNav } from './utils/mobile-navs'
+import { darkMode } from './utils/dark-mode'
+import { lazyLoading } from './utils/lazy-loading'
+import { dateTime } from './utils/date-time'
+import { modal } from './utils/modal'
 
 mobileNav();
 darkMode();
 lazyLoading();
 dateTime();
+modal();

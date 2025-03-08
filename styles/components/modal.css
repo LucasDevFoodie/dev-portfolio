@@ -1,0 +1,38 @@
+dialog::backdrop {
+    background-image: linear-gradient(45deg,
+    #93A5CF,
+    #E4EfE9);
+    opacity: 0.75;
+}
+
+.dialog {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    margin: auto;
+}
+
+dialog[open] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dialog__btn-close {
+    align-self: flex-end;
+}
+
+.dialog__btn-show {
+    margin-top: 1rem;
+}
+
+.dialog__title {
+    color: #475569;
+}

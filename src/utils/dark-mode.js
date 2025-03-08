@@ -2,7 +2,7 @@
     SVG colors are coupled with the class vaue
 */
 
-const darkMode = () => {
+export const darkMode = () => {
     const keyTheme = 'theme';
     const lightMode = 'light-mode';
     const themeToggleBtns = [
@@ -36,5 +36,3 @@ const darkMode = () => {
         })
     )
 }
-
-export default darkMode;
